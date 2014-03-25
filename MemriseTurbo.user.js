@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name           Memrise Turbo
+// @namespace      https://github.com/infofarmer
 // @description    Makes Memrise faster
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
-// @version        0.0.1
-// @updateURL      
-// @downloadURL    
+// @version        0.1.0
+// @updateURL      https://userscripts.org/scripts/source/428427.meta.js
+// @downloadURL    https://userscripts.org/scripts/source/428427.user.js
 // @grant          none
 // ==/UserScript==
 

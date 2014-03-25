@@ -1,8 +1,11 @@
 MemriseTurbo.user.js
 ===========================
 
-Accelerates your Memrise experience with some tweaks:
-* the moment you type the correct answer, advance to the next question,
-  without ever pressing Enter
+Memrise Turbo advances to the next question as soon as you finish
+typing the correct answer, without any delays or even the need for you
+to press Enter.  Ever. It enables you to water your items at the speed
+of your fingers.
 
-Based on memrise-forgive-typos by raneksi.
+It works for all types of questions — no more pauses.
+
+Inspired by memrise-forgive-typos by raneksi.
