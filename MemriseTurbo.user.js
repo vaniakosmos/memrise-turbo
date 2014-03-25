@@ -22,6 +22,8 @@ var onLoad = function($) {
 		}
 	};
 
+	MEMRISE.garden.feedback.start = function (){ MEMRISE.garden.box.next_press(); };
+
 	var get_thinguser = function(id) {
 		return thingusers.filter(function(e) {
 			return e.thing_id === id;
@@ -94,20 +96,17 @@ var onLoad = function($) {
 			}
 		};
 
-		$('body').off('keydown');
-		$('body').on('keydown', function(e) {
+		$('body').on('keyup', function(e) {
 			try {
 				var copytyping = $('.garden-box').hasClass('copytyping');
 				if (!copytyping && $(e.target).is('input')) {
 					if (check_answer(e.target)) {
-						return alert('Correct!');
+						MEMRISE.garden.box.check();
 					}
 				}
 
-				trigger(e);
 			} catch (err) {
 				console.log('error - falling back to default behavior', err);
-				trigger(e);
 			}
 		});
 	};
