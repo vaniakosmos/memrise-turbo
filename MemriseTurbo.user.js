@@ -4,7 +4,7 @@
 // @description    Makes Memrise faster
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
-// @version        0.1.0
+// @version        0.1.1
 // @updateURL      https://userscripts.org/scripts/source/428427.meta.js
 // @downloadURL    https://userscripts.org/scripts/source/428427.user.js
 // @grant          none
@@ -12,8 +12,13 @@
 
 var onLoad = function($) {
 
+	var oldstart = MEMRISE.garden.feedback.start;
 	MEMRISE.garden.feedback.start = function (){
-		MEMRISE.garden.box.next_press();
+		if (MEMRISE.garden.box.state === 'choosing-mem') {
+			oldstart(1);
+		}else{
+			MEMRISE.garden.box.next_press();
+		}
 	};
 
 	$('body').on('keyup', function(e) {
