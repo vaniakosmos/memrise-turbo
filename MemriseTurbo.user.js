@@ -4,9 +4,9 @@
 // @description    Makes Memrise faster
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
-// @version        0.1.1
-// @updateURL      https://userscripts.org/scripts/source/428427.meta.js
-// @downloadURL    https://userscripts.org/scripts/source/428427.user.js
+// @version        0.1.2
+// @updateURL      https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
+// @downloadURL    https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @grant          none
 // ==/UserScript==
 
