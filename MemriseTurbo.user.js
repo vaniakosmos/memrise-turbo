@@ -4,7 +4,7 @@
 // @description    Makes Memrise faster
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
-// @version        0.1.3
+// @version        0.1.4
 // @updateURL      https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @downloadURL    https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @grant          none
@@ -34,3 +34,6 @@ $('body').on('keyup', function(e) {
 		console.log('error - falling back to default behavior', err);
 	}
 });
+
+MEMRISE.audioPlayer.stop = $.noop;
+MEMRISE.audioPlayer.stopAfter = $.noop;
