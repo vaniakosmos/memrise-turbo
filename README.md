@@ -11,4 +11,4 @@ It works for all types of questions — no more pauses.
 Inspired by memrise-forgive-typos by raneksi.
 
 Installation link:
-https://github.com/infofarmer/memrise-turbo/blob/master/MemriseTurbo.user.js
+https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
