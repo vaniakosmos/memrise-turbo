@@ -5,7 +5,7 @@
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
 // @match          http://www.memrise.com/garden/review/*
-// @version        0.1.5
+// @version        0.1.6
 // @updateURL      https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @downloadURL    https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @grant          none
@@ -39,6 +39,9 @@ $('body').on('keyup', function(e) {
 // always let audio play in full
 MEMRISE.audioPlayer.stop = $.noop;
 MEMRISE.audioPlayer.stopAfter = $.noop;
+
+// disable pausing (especially automatic)
+MEMRISE.garden.pause = $.noop;
 
 // always disable timer
 $("div.garden-timer div.txt").bind("DOMSubtreeModified", function() {
