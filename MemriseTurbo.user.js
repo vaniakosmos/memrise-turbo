@@ -5,7 +5,7 @@
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
 // @match          http://www.memrise.com/garden/review/*
-// @version        0.1.6
+// @version        0.1.7
 // @updateURL      https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @downloadURL    https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @grant          none
@@ -47,3 +47,6 @@ MEMRISE.garden.pause = $.noop;
 $("div.garden-timer div.txt").bind("DOMSubtreeModified", function() {
     MEMRISE.garden.timer.cancel();
 });
+
+// disable alert on exit
+MEMRISE.garden.prevent_accidental_unloading = $.noop;
