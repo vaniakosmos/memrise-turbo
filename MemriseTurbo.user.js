@@ -5,7 +5,7 @@
 // @match          http://www.memrise.com/course/*/garden/*
 // @match          http://www.memrise.com/garden/water/*
 // @match          http://www.memrise.com/garden/review/*
-// @version        0.1.7
+// @version        0.1.8
 // @updateURL      https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @downloadURL    https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
 // @grant          none
@@ -20,7 +20,7 @@ MEMRISE.garden.feedback.start = function (){
     }
 };
 
-$('body').on('keyup', function(e) {
+$('body').on('input', function(e) {
     try {
         if ($(e.target).is('input')) {
             var g = MEMRISE.garden;
