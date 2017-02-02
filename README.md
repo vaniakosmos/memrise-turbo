@@ -1,14 +1,25 @@
-MemriseTurbo.user.js
-===========================
+# MemriseTurbo.user.js
 
-Memrise Turbo advances to the next question as soon as you finish
-typing the correct answer, without any delays or even the need for you
-to press Enter.  Ever. It enables you to water your items at the speed
-of your fingers.
+## About
 
-It works for all types of questions — no more pauses.
+This script is copy of
+[memrise-turbo by infofarmer](https://github.com/infofarmer/memrise-turbo), 
+but with **settings** so you may choose which features you want to use.
 
-Inspired by memrise-forgive-typos by raneksi.
+Script allows to: 
+- go to the next word without pressing Enter
+- fully play audio file even after moving to the next word
+- "choose another mem" automaticly when learning new word
+- disable pause
+- disable timer
+- disable "exit prevent" (aka alert window "Are you sure that you want to leave?")
 
-Installation link:
-https://github.com/infofarmer/memrise-turbo/raw/master/MemriseTurbo.user.js
+
+## Requirements
+- Tampermonkey 
+ ([Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), 
+[Safari](https://tampermonkey.net/?browser=safari))
+- Greasemonkey ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/))
+
+## Installation link
+https://github.com/vaniakosmos/memrise-turbo/raw/master/MemriseTurbo.user.js
