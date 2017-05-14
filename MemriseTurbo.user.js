@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 
-$(document).ready(function() {
+$(function() {
     const localStorageIdentifier = "memrise-turbo";
     const localStorageObject = JSON.parse(localStorage.getItem(localStorageIdentifier)) || {};
 
@@ -26,14 +26,14 @@ $(document).ready(function() {
         focus_review_btn: true
     };
 
-    const $body = $('$body');
+    const $body = $('body');
 
-    $body.after(`<div class="modal fade" id="turbo-modal" tabindex="-1" role="dialog">
+    $body.append(`<div class="modal fade" id="turbo-modal" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-                                <h1 class="modal-title" id="all-typing-modal-label">Memrise turbo Settings</h1>
+                                <h1 class="modal-title" id="all-typing-modal-label">MTurbo Settings</h1>
                             </div>
                             <div class="modal-body">
                                 <div>
