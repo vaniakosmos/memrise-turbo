@@ -33,7 +33,7 @@ $(function() {
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-                                <h1 class="modal-title" id="all-typing-modal-label">MTurbo Settings</h1>
+                                <h1 class="modal-title" id="all-typing-modal-label">Memrise Turbo Settings</h1>
                             </div>
                             <div class="modal-body">
                                 <div>
@@ -46,7 +46,7 @@ $(function() {
                     </div>
                 </div>`);
 
-    $('#left-area').append('<a data-toggle="modal" data-target="#turbo-modal">Memrise Turbo Settings</a>');
+    $('#left-area').append('<a data-toggle="modal" data-target="#turbo-modal">MTurbo Settings</a>');
 
     $('#turbo-modal').on('shown.bs.modal', function() {
         $(document).off('focusin.modal'); //enable focus events on modal
